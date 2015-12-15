@@ -1,0 +1,12 @@
+{
+  "src/jumski/gravity/*.clj": {
+    "command": "src",
+    "alternate": "test/jumski/gravity/{}_test.clj",
+    "template": "(ns jumski.gravity.{dot|hyphenate})\n"
+  },
+  "test/jumski/gravity/*_test.clj": {
+    "command": "test",
+    "alternate": "src/jumski/gravity/{}.clj",
+    "template": "(ns jumski.gravity.{dot|hyphenate})\n"
+  }
+}
